@@ -131,7 +131,7 @@ export default {
           left: this.left,
           top: this.top,
         };
-        await axios.put(`http://localhost:5000/api/images/edit/${this.image._id}`, editData);
+        await axios.put(`https://imageview.onrender.com/api/images/edit/${this.image._id}`, editData);
         this.$emit('edited');
         this.$emit('close');
       } catch (error) {

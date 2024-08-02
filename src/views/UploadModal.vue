@@ -65,7 +65,7 @@
         try {
           const formData = new FormData();
           formData.append('image', this.file);
-          await axios.post('http://localhost:5000/api/images/upload', formData);
+          await axios.post('https://imageview.onrender.com/api/images/upload', formData);
           this.$emit('uploaded');
           this.$emit('close');
         } catch (error) {
